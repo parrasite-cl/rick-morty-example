@@ -17,15 +17,10 @@ function App() {
   console.log(characters);
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <header>
         <h1 className="title">Rick & Morty</h1>
         {characters ? (
-          <Characters characters={characters} setCharacters={setCharacters}/>
+          <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
           <>
             {" "}
